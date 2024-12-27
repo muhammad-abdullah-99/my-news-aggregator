@@ -1,5 +1,5 @@
 export const fetchFromNewsAPI = async (query, page = 1) => {
-    const apiKey = "0b47c942ddf442ccb02faba5d6355539";
+    const apiKey = "";
     const url = `https://newsapi.org/v2/everything?q=${query}&page=${page}&apiKey=${apiKey}`;
 
     const response = await fetch(url);
