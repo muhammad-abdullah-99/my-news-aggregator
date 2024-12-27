@@ -1,0 +1,35 @@
+.form-control {
+    position: relative;
+    margin-bottom: 1rem; // Add spacing between fields
+    width: 100%; // Ensure full width
+
+    label {
+        font-size: 1rem;
+        background: white !important; // Ensure the label has a background
+        padding: 0 4px; // Add padding around the text
+        position: absolute;
+        top: -8px; // Position the label above the select field
+        left: 10px; // Align with padding
+        transform: translateY(50%);
+        transition: all 0.2s ease-in-out;
+        z-index: 1; // Ensure the label is above the input field
+    }
+
+    .MuiSelect-root,
+    .MuiInputBase-root {
+        background: white !important; // Background for the select input
+        border-radius: 4px;
+    }
+
+    .Mui-focused label,
+    .MuiInputLabel-shrink {
+        top: -12px;
+        transform: none; // Remove translation when focused
+        font-size: 0.9rem; // Adjust font size when label is focused
+        color: #1976d2; // Match Material-UI primary color
+    }
+
+    .Mui-error label {
+        color: #d32f2f; // Match Material-UI error color
+    }
+}

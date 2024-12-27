@@ -1,0 +1,64 @@
+.latest-news-section {
+    background: url('/images/LatestNewsBg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+}
+
+.latest-news {
+    background: rgba(245, 245, 245, 0.7);
+    /* Add a translucent background */
+    padding: 80px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(11px);
+
+    .section-title {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .latest-news-card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image-link {
+            display: block;
+
+            img {
+                width: 100%;
+                border-radius: 5px 5px 0 0;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .news-title-link {
+            text-decoration: none;
+            color: #333;
+
+            h6 {
+                font-size: 1rem;
+                font-weight: bold;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #007BFF;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .description {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+    }
+}
