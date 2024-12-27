@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchFromGuardianAPI = async (query, page = 1) => {
     try {
-        const apiKey = 'f5bbc1f3-b9ad-49da-94cf-8c5a7d4a1b45';
+        const apiKey = '';
         const response = await axios.get(
             `https://content.guardianapis.com/search`,
             {
