@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchFromNYTAPI = async (query, page = 1) => {
     try {
-        const apiKey = 'bAuPk68TyojG68qy6a41i7oUcPTkfQrO';
+        const apiKey = '';
         const response = await axios.get(
             `https://api.nytimes.com/svc/search/v2/articlesearch.json`,
             {
